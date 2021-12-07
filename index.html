@@ -8,7 +8,7 @@
 		<meta name="description" content="Our mission is to ensure our clients are always at the forefront of innovation; from evolving technology to smarter KPIs and measurement to unique &amp; meaningful omnichannel experiences.">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		
 		
@@ -82,7 +82,7 @@
 				.testimonials h1 { font-weight: 700; }
 			.allCar {}
 			.eachCar {}
-			.carQuote { font-weight: 700; text-transform: uppercase; font-family: Futura,Trebuchet MS,Arial,sans-serif; font-size: 1.4em; }
+			.carQuote { font-weight: 500; font-family: Futura,Trebuchet MS,Arial,sans-serif; font-size: 1.4em; }
 			.carSrc { font-weight: 500; }
 			
 			/* Dots */
@@ -99,15 +99,20 @@
 			
 			footer { background-image: url('FooterOverlay_BlueSky.jpeg'); background-size: cover; background-color: rgba(0,0,0,0.5); background-blend-mode: darken; padding-top: 2.5em; padding-bottom: 2em; }
 			
-			.copyright { color: #FFF; font-weight: 300; text-transform: uppercase; font-size: 0.9em; }
-			footer .amplogo { width: 100%; }
+			.copyright { color: #FFF; font-weight: 200; text-transform: uppercase; font-size: 0.9em; }
+			footer .amplogo { width: 100%; max-width: 24em; }
 			.footerCats h4 { color: #FFF; font-weight: 600; }
-			.footerLegal { color: #FFF; }
+			.footerLegal { color: #FFF; font-weight: 500; }
 			.footerLegal a { color: #FFF; text-decoration: none; position: relative; }
 				.footerLegal a:after { height:0.2em; background-color: #FFF; width: 0; position: absolute; content: ''; bottom: -5px; left: 0; transition: all 0.25s ease; }
 				.footerLegal a:hover:after { width: 2em; }
+			.socialIcons { text-align: right; }
+			.socialIcons li a { margin-left: 1em; }
+				.socialIcons li:first-child a { margin-left: 0; }
 			@media screen and (max-width:576px) {
-				.footerLegal { text-align: center; }
+				footer .amplogo { width: 80%; display: table; margin: 0 auto 2em; }
+				.footerLegal, .copyright { text-align: center; }
+				.socialIcons { text-align: center; }
 			}
 		</style>
 	</head>
@@ -116,15 +121,12 @@
 			<div class="ampBanner">
 				<div class="navContainer">
 					<div class="container">
-						<div class="row">
-							<div class="col-sm-4">
+						<div class="row align-items-center">
+							<div class="col-sm-6">
 								<a href="/"><img src="AMP_Logo_White.svg" alt="Amplifyer" /></a>
 							</div>
-							<div class="col-sm-8">
+							<div class="col-sm-6">
 								<ul class="nav justify-content-end">
-									<li class="nav-item">
-										<a class="nav-link" href="/#about">About</a>
-									</li>
 									<li class="nav-item">
 										<a class="nav-link btn-secondary" href="/contact/">Contact</a>
 									</li>
@@ -274,7 +276,7 @@
 		
 		<footer>
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-sm-6">
 						<img src="AMP_Logo_White.svg" alt="Amplifyer" class="amplogo" />
 						<p class="footerLegal"><a href="/contact/">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy-policy/">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/terms-service/">Terms of Service</a></p>
