@@ -54,7 +54,7 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 	.navContainer img { max-width: 16em; width: 100%; }
 .ambBannerContent {padding-top: 11em;padding-bottom: 8em;}
 	.ambBannerContent h1 { padding:0 0 0.2em 0; font-size: 3.5em; font-weight: 700; color: #FFF; }
-	.ambBannerContent h3 { padding: 0 0 1em 0; font-size: 1em; font-weight: 700; color: #FFF; }
+	.ambBannerContent h3 { padding: 1em 0 1em 0; font-size: 1.35em; font-weight: 700; color: #FFF; line-height: 1.75; }
 
 .ambBannerContent.ambContact { padding-top: 3em; padding-bottom: 2em; }
 .ambBannerContent.ambContact h3 { padding: 2em 0 1em 0; }
@@ -77,7 +77,8 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 }
 
 .mtt { background-image: url('Orange1_08.jpg'); background-size: cover; padding-top: 3em; padding-bottom: 3em; }
-	.mtt h1 { font-weight: 700; color: #FFF; margin-bottom: 1em; }
+	.mtt h1 { font-weight: 700; color: #FFF; margin-bottom: 0.5em; }
+	.mtt .sepLight { margin-bottom: 2.5em; }
 .mttEach { padding-right: 2.5%; padding-left: 2.5%; }
 .mttEach h2 { color: #FFF; font-size: 1.25em; font-weight: 700; margin-top: 1.6em; }
 .mttEach h3 { color: #FFF; font-size: 1.25em; font-weight: 700; }
