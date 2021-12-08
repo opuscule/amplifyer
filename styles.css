@@ -114,7 +114,7 @@ footer .amplogo { width: 100%; max-width: 24em; margin-bottom: 1.5em; }
 	.footerLegal a:after { height:0.2em; background-color: #FFF; width: 0; position: absolute; content: ''; bottom: -5px; left: 0; transition: all 0.25s ease; }
 	.footerLegal a:hover:after { width: 2em; }
 .socialIcons { text-align: right; }
-.socialIcons li a { margin-left: 1em; }
+.socialIcons li a { margin-left: 0.7em; }
 	.socialIcons li:first-child a { margin-left: 0; }
 @media screen and (max-width:576px) {
 	footer .amplogo { width: 80%; display: table; margin: 0 auto 2em; }
