@@ -59,6 +59,8 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .ambBannerContent.ambContact { padding-top: 3em; padding-bottom: 2em; }
 .ambBannerContent.ambContact h3 { padding: 2em 0 1em 0; }
 
+.ambBannerContent.ambBannerLegal { padding-top: 6em; padding-bottom: 5em; }
+
 .contactContainer { padding-top: 4em; padding-bottom: 4em; }
 .contactContainer h3 { font-weight: 600; font-family: 'Montserrat', sans-serif; font-size: 1.4em; margin-bottom: 0.1em; }
 .contactContainer p { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.2em; }
@@ -68,6 +70,10 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 
 @media screen and (max-width:576px){
 	.contactContainer .col-sm-5 { margin-top: 3em; }
+	.ambBannerContent h1 { font-size: 2.5em; }
+	.ambBannerContent { padding-top: 6em; padding-bottom: 5em; }
+	.ambBannerContent.ambBannerLegal { padding-top: 4em; padding-bottom: 3em; }
+	.aboutCol { margin-bottom: 1.5em; margin-top: 1.5em; }
 }
 
 .mtt { background-image: url('Orange1_08.jpg'); background-size: cover; padding-top: 3em; padding-bottom: 3em; }
@@ -102,7 +108,7 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .slick-dots li button:before { font-size: 6px;line-height: 20px;background-color:#cdcdcd;position: absolute;top: 0;left: 0;width: 12px;height: 12px;border-radius: 50%;content: '';text-align: center; }
 .slick-dots li.slick-active button:before { background-color:#545454; }
 
-.legalCont { padding-top: 2em; padding-bottom: 4em; }
+.legalCont { padding-top: 4em; padding-bottom: 4em; }
 
 footer { background-image: url('FooterOverlay_BlueSky.jpeg'); background-size: cover; background-color: rgba(0,0,0,0.5); background-blend-mode: darken; padding-top: 2.5em; padding-bottom: 2em; }
 
