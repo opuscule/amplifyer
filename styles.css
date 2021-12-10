@@ -80,16 +80,13 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 	.mtt h1 { font-weight: 700; color: #FFF; margin-bottom: 0.5em; }
 	.mtt .sepLight { margin-bottom: 2.5em; }
 .mttEach { padding-right: 2.5%; padding-left: 2.5%; }
-.mttEach h2 { color: #FFF; font-size: 1.25em; font-weight: 700; margin-top: 1.6em; }
-.mttEach h3 { color: #FFF; font-size: 1.25em; font-weight: 700; }
+.mttEach h2 { color: #FFF; font-size: 1.25em; font-weight: 700; text-transform: capitalize; margin-bottom: 2px; }
+.mttEach h3 { color: #FFF; font-size: 1.25em; font-weight: 400; text-transform: capitalize; }
 .mttEach p { color: #FFF; }
-.mttEach img { width: 100%; }
+.mttEach img { width: 100%; margin-bottom: 1.3em; }
 
-.mttGrid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: auto auto; column-gap: 1em; }
-.mttLead h2 { color: #FFF; font-size: 1.25em; font-weight: 700; margin-top: 1.6em; }
-.mttLead h3 { color: #FFF; font-size: 1.25em; font-weight: 700; }
-.mttLead p { color: #FFF; }
-.mttLead img { width: 100%; }
+.mttGrid { display: flex; column-gap: 1em; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; }
+
 
 @media screen and (max-width:576px) {
 	.mttEach { margin-bottom: 3em;}
