@@ -85,6 +85,12 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .mttEach p { color: #FFF; }
 .mttEach img { width: 100%; }
 
+.mttGrid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: auto auto; column-gap: 1em; }
+.mttLead h2 { color: #FFF; font-size: 1.25em; font-weight: 700; margin-top: 1.6em; }
+.mttLead h3 { color: #FFF; font-size: 1.25em; font-weight: 700; }
+.mttLead p { color: #FFF; }
+.mttLead img { width: 100%; }
+
 @media screen and (max-width:576px) {
 	.mttEach { margin-bottom: 3em;}
 		.mttEach:last-child { margin-bottom: 1em; }
