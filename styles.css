@@ -121,7 +121,7 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .svcsCont h1 { font-size: 3.5em; font-weight: 700; }
 .svcsCont h2 { font-size: 2.25em; font-weight: 700; display: inline-block; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #000; margin-bottom: 0.75em; }
 .svcsCont .tcsContainer h2 { border-bottom-color: #FFF; }
-.svcsCont h4 { font-weight: 700; font-size: 1em; font-family: 'Montserrat', sans-serif; }
+.svcsCont h4 { font-weight: 700; font-size: 1.2em; font-family: 'Montserrat', sans-serif; }
 
 .svcsLeadin { font-size:1.1em;font-weight: 700; }
 .svcsCont p, .svcsCont li { font-weight: 700; }
