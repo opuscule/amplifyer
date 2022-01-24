@@ -150,6 +150,15 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .eachSvcLI { font-size: 1.125em; font-weight: 500; }
 
 
+
+
+
+.servicesAll h1, 
+.servicesAll h2,
+.servicesAll h3,
+.servicesAll h4, 
+.servicesAll h5,
+.servicesAll h6 { text-transform: none; }
 .ampNav { background-color: #0073DE; }
 
 .servicesBanner { background-color: #0073DE; margin-bottom: -3em; }
@@ -175,7 +184,9 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 .ilbg3 img { width: 140%; margin-top: -5.2vw; }
 .lgabm { background-color: #FFF;  }
 
+.ourPractices svg { max-width: 4em; }
 .opColCont  { padding-left: 3vw; padding-right: 3vw; }
+	.opColCont h1.h2 { font-weight: 700; }
 .opi1 { background-color: rgba(233,233,233,1); }
 .opi2 { background-color:rgba(233,233,233,0.43); }
 .opi3 { background-color:rgba(246,246,246,0.47) }
