@@ -162,7 +162,7 @@ p, ul, ol, li { font-family: 'Montserrat', sans-serif; }
 
 .svcsTitleCase { text-transform: none; }
 .ampNav { background-color: #0073DE; }
-.ampNav img { max-width: 14em; }
+.ampNav img { width:100%; max-width: 14em; }
 
 @media (min-width: 1200px) {
 	h1.svcTitle { font-size: 3.5rem; }
