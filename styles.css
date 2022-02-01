@@ -15,6 +15,10 @@
 	.icon-instagram:before {content: "\ea92";}
 	.icon-twitter:before {content: "\ea96";}
 
+:root {
+  --bs-gutter-x: 2.5em;
+}
+
 .nav-link.btn-secondary { background-color: #FFF; color: #000; padding: 0.6em 2em 0.5em;border: 2px solid #fff; transition: all 0.25s ease; font-weight: 600; }
 	.nav-link.btn-secondary:hover { background-color: rgba(255,255,255,0); color: #FFF; }
 .container { max-width: 1260px; }
