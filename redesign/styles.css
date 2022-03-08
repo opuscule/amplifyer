@@ -6,6 +6,7 @@
 }
 h1, h2, h3, h4, h5, h6 { font-family: var(--primary-font); font-weight: 200; text-transform: uppercase; }
 p, ul, ol, li { font-family: var(--secondary-font); }
+li.nav-item { font-family: var(--primary-font); text-transform: uppercase; }
 
 .container { max-width: 1250px; }
 .arrow-down { width: 1.75em; }
@@ -16,11 +17,14 @@ p, ul, ol, li { font-family: var(--secondary-font); }
 	.btn-darkbg:focus { color: var(--dark-color); background-color: rgba(255,255,255,1);  }
 
 .logo-nav { width: 100%; max-width: 2em; }
-.lead-banner h1 { font-size: clamp(8em, 8em + 1vw, 10em); }
+.lead-banner h1 { font-size: clamp(2.875em, 10vw, 7.5em); }
 	.lead-banner h1 b { font-weight: 700; }
 .lead-banner p { font-size: 1em; font-family: var(--primary-font); font-weight: 400; }
 
-.section-marker { transform: rotate(270deg); margin-top: 5em; }
+.section-marker { transform: rotate(270deg); margin-top: 5em; text-transform: uppercase; font-weight: 400; font-family: var(--primary-font); font-size: 1rem; }
+	.sm-text { display: inline-block; position: relative; }
+	.sm-text:after { width: 4.625rem; position: absolute; content:""; height: 1px; bottom: 6px; right: -5.25rem; }
+	
 @media (max-width:768px){
 	.section-marker { transform: rotate(0); }
 }
@@ -37,10 +41,12 @@ p, ul, ol, li { font-family: var(--secondary-font); }
 	.services-curve { min-height:750px; }
 }
 .services-content { max-width: 1250px; display: flex; }
-.services-marker { color: #FFF; position: relative; }
-	.services-marker:after { position: absolute; content:""; width: 3em; height:1px; background-color: #FFF; bottom: 0; }
+.marker-lightbg { color: var(--dark-color); }
+	.marker-lightbg:after { background-color: var(--dark-color); }
+.marker-darkbg { color: #FFF; position: relative; }
+	.marker-darkbg:after { background-color: #FFF; }
 
-.services-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto auto auto; color: #FFF; column-gap: 12%; }
+.services-cols { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto auto auto; color: #FFF; column-gap: 8%; }
 .sc-title1,
 .sc-title2,
 .sc-title3 { font-family: var(--primary-font); font-weight: 200; text-transform: uppercase; }
@@ -54,24 +60,46 @@ p, ul, ol, li { font-family: var(--secondary-font); }
 .sc-content1 { grid-column: 1 / 2; grid-row: 3 / 4; }
 .sc-content2 { grid-column: 2 / 3; grid-row: 3 / 4; }
 .sc-content3 { grid-column: 3 / 4; grid-row: 3 / 4; }
-.services-cols ul { list-style-type: none; }
-.services-cols ul li { position: relative; margin-bottom: 0.5em; }
-	.services-cols ul li::before { position: absolute; content:"͢   ";top: 0px; left: -1em; font-size: 0.75em; color: rgba(255,255,255,0.8); }
 
+.services-cols h3 { font-size: 2rem; }
+	.services-cols h3 strong { font-weight: 700; }
+.sc-content p { font-size: 1.5rem; line-height: 1.3; }
+.sc-content ul { list-style-type: none; }
+.sc-content ul li { position: relative; margin-bottom: 0.5em; }
+	.services-cols ul li::before { position: absolute; content:"͢   ";top: 0px; left: -1em; font-size: 0.75em; color: rgba(255,255,255,0.8); }
 
 .services-sep { grid-column: 1 / 4; grid-row: 2 / 3; width: 100%; height:1px; background-color: #4A4F6E; }
 
+.services-content .section-marker { margin-top: 7.2em; position: absolute; left:-20px; }
 
+@media (max-width:768px){
+	.services-overlap { background:#FFF; }
+	.services-content { background-color: var(--dark-color); }
+	.services-cols { display: block; }
+	.sc-content { margin-bottom: 4.125rem; }
+	.services-cols h3 { border-bottom:1px solid #4A4F6E; padding-bottom: 1.75rem; margin-bottom: 1.65rem; }
+	.services-sep { display: none; }
+}
+
+
+.client-testimonials { margin-top: 7.5em; margin-bottom: 7.5em; }
 .ct-grid { max-width: var(--max-width); display: grid; grid-template-columns: 9% 41% 41% 9%; grid-template-rows: auto auto; margin: auto; }
 .ct-content-col1 { grid-column: 2 / 3; grid-row: 1 / 2; display: flex; }
 	.ct-content-col1 h1 { font-size: clamp(3em, 3em + 1vw, 4.5em); margin-bottom: 1.25em; }
+		.ct-content-col1 h1 b { font-weight: 800; }
 .ct-content-col2 { grid-column: 3 / 4; grid-row: 1 / 3; }
 .ct-image { grid-column: 1 / 3; grid-row: 2 / 3; background-image: url('sunset.jpeg'); background-size: cover; background-position: center center; aspect-ratio: 745 / 500; }
+
+
+.ct-quote { font-family: var(--primary-font); font-size: 1.5rem; line-height: 1.4; }
+.ct-src { font-size: 1.25rem; line-height: 1.2; font-family: var(--primary-font); }
+
+
 
 /* Dots */
 .ct-container .slick-dotted.slick-slider { margin-bottom: 30px; }
 .ct-container  .slick-dots { position: absolute;top: -3em; display: block;width: 100%; padding: 0;margin: 0;list-style: none;text-align: left;}
-.ct-container .slick-dots li { position: relative;display: inline-block; width: 20%;height: auto; margin-right: 5%;padding: 0;cursor: pointer; }
+.ct-container .slick-dots li { position: relative;display: inline-block; width: 12%;height: auto; margin-right: 5%;padding: 0;cursor: pointer; }
 .ct-container .slick-dots li button { font-size: 0;line-height: 0;display: block;width: 100%; height: auto; cursor: pointer;color: transparent;border: 0;outline: none; position: relative; background: none; }
 .ct-container .slick-dots li button:hover,
 .ct-container .slick-dots li button:focus { outline: none; }
@@ -80,8 +108,18 @@ p, ul, ol, li { font-family: var(--secondary-font); }
 .ct-container .slick-dots li button:before { background-color:var(--dark-color); position: absolute; top: 0; left: 0; width: 100%;height: 1px; content: ''; text-align: center; padding: 0.8em 0; }
 .ct-container .slick-dots li.slick-active button:before { height: 5px; top: -2px; }
 
+@media (max-width:768px) {
+	.ct-grid { display: block; }
+	.ct-content-col1 { flex-direction: column; }
+	.ct-content-col1,
+	.ct-content-col2 { max-width: calc(100vw - 1.5rem ); margin: auto; }
+}
 
 
+
+.the-team { margin-bottom: 9rem; }
+.the-team h1 { font-size: clamp(3em, 3em + 1vw, 4.5em); margin-bottom: 4rem; margin-top: -0.6rem; }
+	.the-team h1 b { font-weight: 800; }
 .team-container { display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; border: 1px solid #DEDEDE; column-gap: 1px; background-color: #DEDEDE; }
 .each-team { background-color: #FFF; border: none; }
 .each-team:last-child {  }
