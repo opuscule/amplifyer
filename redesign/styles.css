@@ -171,6 +171,11 @@ li.nav-item { font-family: var(--primary-font); text-transform: uppercase; }
 
 
 #go-to-market { margin-top: 8.375rem; }
+.gtm-cards { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap:2rem; }
+.gtm-card { background-size: cover; padding: 2.1875rem; }
+.gtm-card:nth-child(odd) { margin-top:-2rem; margin-bottom:2rem; }
+	.gtm-card ul { margin: 0; padding: 0; list-style-type: none; font-family: var(--primary-font); }
+		.gtm-card ul li { font-family: var(--primary-font); font-size: 1rem;  }
 
 footer#footer { background-color: var(--dark-color); }
 	footer#footer h1 { color: #FFF; font-size: clamp(2.875em, 10vw, 7.5em); letter-spacing: -0.04em; font-weight: 200; line-height: 1; }  
