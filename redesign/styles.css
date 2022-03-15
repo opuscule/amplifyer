@@ -236,6 +236,25 @@ li.nav-item { font-family: var(--primary-font); text-transform: uppercase; }
 	
 }
 
+.book-consultation { display: grid; grid-template-columns: auto minmax(auto,90rem) auto; grid-template-rows: 60% 40%; }
+.bc-imagebg { background-image: url('images/contact-bg.jpeg'); background-size: cover; grid-column: 2 / 3; grid-row: 1 / 3; padding: 6rem; }
+	.bc-imagebg h2 { font-size: clamp(2.5rem,5vw,4.5rem); }
+		.bc-imagebg h2 b { font-weight: 800; }
+@media (min-width:1440px){
+	.bc-imagebg { margin-left: 6.725rem; }
+}
+@media (min-width:768px) and (max-width:1440px) {
+	.bc-imagebg { padding: 3vw; }
+}
+@media (max-width:768px){
+	.bc-imagebg { padding: 0; }
+}
+.bc-underlay { background-color: var(--dark-color); grid-column: 1 / 4; grid-row: 2 / 3; }
+
+.bc-imagebg p { font-family: var(--primary-font); }
+	.bc-imagebg p a.contact-email { color: #FFF; text-decoration: none; }
+
+
 footer#footer { background-color: var(--dark-color); }
 	footer#footer h1 { color: #FFF; font-size: clamp(2.875em, 10vw, 7.5em); letter-spacing: -0.04em; font-weight: 200; line-height: 1; }  
 .footer-logo { max-width: 224px; }
