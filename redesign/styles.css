@@ -25,7 +25,7 @@ li.nav-item { font-family: var(--primary-font); text-transform: uppercase; }
 	.navbar-expand-sm .navbar-nav .nav-link { padding: 0; }
 }
 
-.lead-banner h1 { font-size: clamp(2.875em, 10vw, 7.5em); }
+.lead-banner h1 { font-size: clamp(4em, 12vw, 10em); }
 	.lead-banner h1 b { font-weight: 700; }
 .lead-banner p { font-size: 1em; font-family: var(--primary-font); font-weight: 400; }
 
